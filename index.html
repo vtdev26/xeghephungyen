@@ -53,10 +53,22 @@
         }
       }
 
-      h3.text-white1 {
+      h4.text-white1, h5.text-white1 {
         animation: blink 1s infinite !important;
         /* Thêm các thuộc tính CSS khác nếu cần */
       }
+	  h1.text-uppercase-phone {
+            color: #ffffff;
+            display: inline-block; /* Để có thể sử dụng padding */
+            position: relative; /* Cần thiết để chứa icon */
+        }
+
+        .phone-icon {
+            position: absolute;
+            top: 0;
+            right: -30px; /* Điều chỉnh vị trí icon, có thể thay đổi tùy theo thiết kế */
+            cursor: pointer;
+        }
       /* Responsive adjustments */
 	  @media (max-width: 768px) {
             .banner-content {
@@ -133,8 +145,8 @@
           class="row fullscreen d-flex align-items-center justify-content-between"
         >
 		<div class="banner-content col-lg-6 col-md-6" style="padding-bottom: 100px;">
-				<h3 class="text-white1">Xe Tiện Chuyến Hưng Yên - Hà Nội</h3>
-				<h3 class="text-white1">Xe Bệnh Viện Hưng Yên - Hà Nội</h3>
+				<h4 class="text-white1">Xe Tiện Chuyến Hưng Yên - Hà Nội</h4>
+				<h4 class="text-white1">Xe Bệnh Viện Hưng Yên - Hà Nội</h4>
 				<br>
 				<br>
 				<p style="font-family: Arial, sans-serif; color: #ffffff; line-height: 1.8;">
@@ -146,9 +158,13 @@
 						✨ <strong style="color: #ff6600;">Linh hoạt</strong>: Nhiều khung giờ xuất phát linh hoạt, phù hợp với lịch trình của bạn.<br><br>
 					</span>
 				</p>
-				<h1 class="text-uppercase" style="color: #ffffff; margin-bottom: 10px; font-size: 40px;">0964.740.527</h1>
+				<a href="tel:+84123456789"><h1 class="text-uppercase" style="font-style: oblique; color: #ffffff; margin-bottom: 10px; font-size: 40px;">0964.740.527</h1></a>
 				<a href="tel:+84123456789" class="primary-btn text-uppercase" style="background-color: #c5c5c5; font-size: 20px; padding: 1px 5px; line-height: 1.5;">
 					Xe ghép Hưng Yên - Hà Nội
+				</a>
+				<br>
+				<a href="tel:+84123456789" class="text-uppercase">
+					<h5 class="text-white1" style="margin-top: 15px;">📞📞📞 Nhấn để gọi ngay ☎️☎️☎️</h5>
 				</a>
 			  </div>
             <h3 class="text-white1">Xe Tiện Chuyến Hưng Yên - Hà Nội</h3>
